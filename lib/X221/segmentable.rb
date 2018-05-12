@@ -9,6 +9,7 @@ module X221
       gs:  'Functional Group Header',
       ge:  'Functional Group Trailer',
       st:  'Transaction Set Header',
+      se:  'Transaction Set Trailer',
     }
 
     def self.cleanse_raw_data(raw_data)
