@@ -10,6 +10,7 @@ module X221
       ge:  'Functional Group Trailer',
       st:  'Transaction Set Header',
       se:  'Transaction Set Trailer',
+      bpr: 'Beginning Segment for Payment Order/Remittance Advice',
     }
 
     def self.cleanse_raw_data(raw_data)
