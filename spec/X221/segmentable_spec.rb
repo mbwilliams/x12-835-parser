@@ -12,11 +12,11 @@ module X221
     end
 
     it "has a data element separator" do
-      expect(Segmentable::DATA_ELEMENT_SEPARATOR).to eq('*')
+      expect(Segmentable::ELEMENT_DELIMITER).to eq('*')
     end
 
     it "has the name of all segment types" do
-      segment_keys = [:isa, :gs, :ge, :st]
+      segment_keys = [:isa, :iea, :gs, :ge, :st, :se, :bpr, :trn, :cur]
       expect(Segmentable::SEGMENT_NAMES.keys).to eq(segment_keys)
     end
 
