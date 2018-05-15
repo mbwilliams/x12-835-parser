@@ -11,6 +11,7 @@ module X221
       st:  'Transaction Set Header',
       se:  'Transaction Set Trailer',
       bpr: 'Beginning Segment for Payment Order/Remittance Advice',
+      trn: 'Trace',
     }
 
     def self.cleanse_raw_data(raw_data)
