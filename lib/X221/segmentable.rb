@@ -14,6 +14,7 @@ module X221
       trn: 'Trace',
       cur: 'Currency',
       ref: 'Reference Information',
+      dtm: 'Date/Time Reference',
     }
 
     def self.cleanse_raw_data(raw_data)
