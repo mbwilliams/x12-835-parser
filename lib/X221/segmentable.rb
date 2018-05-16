@@ -17,6 +17,7 @@ module X221
       dtm: 'Date/Time Reference',
       n1:  'Party Identification',
       n3:  'Party Location',
+      n4:  'Geographic Location',
     }
 
     def self.cleanse_raw_data(raw_data)
