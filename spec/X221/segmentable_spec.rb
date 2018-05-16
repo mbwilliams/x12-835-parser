@@ -18,7 +18,7 @@ module X221
     it "has the name of all segment types" do
       segment_keys = [
                       :isa, :iea, :gs, :ge, :st, :se, :bpr, :trn, :cur, :ref,
-                      :dtm, :n1
+                      :dtm, :n1, :n3,
                      ]
       expect(Segmentable::SEGMENT_NAMES.keys).to eq(segment_keys)
     end

@@ -16,6 +16,7 @@ module X221
       ref: 'Reference Information',
       dtm: 'Date/Time Reference',
       n1:  'Party Identification',
+      n3:  'Party Location',
     }
 
     def self.cleanse_raw_data(raw_data)
