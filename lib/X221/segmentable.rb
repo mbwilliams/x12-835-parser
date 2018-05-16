@@ -15,6 +15,7 @@ module X221
       cur: 'Currency',
       ref: 'Reference Information',
       dtm: 'Date/Time Reference',
+      n1:  'Party Identification',
     }
 
     def self.cleanse_raw_data(raw_data)
