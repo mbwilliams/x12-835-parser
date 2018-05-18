@@ -19,6 +19,7 @@ module X221
       n3:  'Party Location',
       n4:  'Geographic Location',
       per: 'Administrative Communications Contact',
+      rdm: 'Remittance Delivery Method',
     }
 
     def self.cleanse_raw_data(raw_data)
