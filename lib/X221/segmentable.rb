@@ -20,6 +20,7 @@ module X221
       n4:  'Geographic Location',
       per: 'Administrative Communications Contact',
       rdm: 'Remittance Delivery Method',
+      lx:  'Transaction Set Line Number',
     }
 
     def self.cleanse_raw_data(raw_data)
