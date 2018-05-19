@@ -21,6 +21,7 @@ module X221
       per: 'Administrative Communications Contact',
       rdm: 'Remittance Delivery Method',
       lx:  'Transaction Set Line Number',
+      ts3: 'Transaction Statistics'
     }
 
     def self.cleanse_raw_data(raw_data)
