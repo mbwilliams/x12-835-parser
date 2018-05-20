@@ -23,6 +23,7 @@ module X221
       lx:  'Transaction Set Line Number',
       ts3: 'Transaction Statistics',
       ts2: 'Transaction Supplemental Statistics',
+      clp: 'Claim Level Data',
     }
 
     def self.cleanse_raw_data(raw_data)
