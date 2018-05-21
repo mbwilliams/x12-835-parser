@@ -24,6 +24,7 @@ module X221
       ts3: 'Transaction Statistics',
       ts2: 'Transaction Supplemental Statistics',
       clp: 'Claim Level Data',
+      cas: 'Claims Adjustment',
     }
 
     def self.cleanse_raw_data(raw_data)
