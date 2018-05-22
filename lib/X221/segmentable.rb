@@ -27,6 +27,8 @@ module X221
       cas: 'Claims Adjustment',
       mia: 'Medicare Inpatient Adjudication',
       moa: 'Medicare Outpatient Adjudication',
+      amt: 'Monetary Amount Information',
+      qty: 'Quantity Information',
     }
 
     def self.cleanse_raw_data(raw_data)
