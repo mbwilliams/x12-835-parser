@@ -19,7 +19,7 @@ module X221
       segment_keys = [
                       :isa, :iea, :gs, :ge, :st, :se, :bpr, :trn, :cur, :ref,
                       :dtm, :n1, :n3, :n4, :per, :rdm, :lx, :ts3, :ts2, :clp,
-                      :cas, :mia, 
+                      :cas, :mia, :moa, 
                      ]
       expect(Segmentable::SEGMENT_NAMES.keys).to eq(segment_keys)
     end
