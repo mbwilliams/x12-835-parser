@@ -25,6 +25,7 @@ module X221
       ts2: 'Transaction Supplemental Statistics',
       clp: 'Claim Level Data',
       cas: 'Claims Adjustment',
+      mia: 'Medicare Inpatient Adjudication',
     }
 
     def self.cleanse_raw_data(raw_data)
