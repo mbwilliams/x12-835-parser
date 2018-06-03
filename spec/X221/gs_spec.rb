@@ -3,8 +3,8 @@ require 'X221/gs'
 module X221
   describe Gs do
     before do
-      @raw_data = "GS*HP*SENDER CODE*RECEIVER CODE*20051231*0802*1*X*005010X221~"
-      @gs = Gs.new(@raw_data)
+      tr3_example = "GS*HP*SENDER CODE*RECEIVER CODE*20051231*0802*1*X*005010X221~"
+      @gs = Gs.new(tr3_example)
     end
 
     it "has a Segment ID value GS" do

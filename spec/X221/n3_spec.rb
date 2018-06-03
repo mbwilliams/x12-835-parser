@@ -3,8 +3,8 @@ require 'X221/n3'
 module X221
   describe N3 do
     before do
-      @raw_data = 'N3*100 MAIN STREET*SUITE 16~'
-      @n3 = N3.new(@raw_data)
+      tr3_example = 'N3*100 MAIN STREET*SUITE 16~'
+      @n3 = N3.new(tr3_example)
     end
 
     it "has a Segment ID value N3" do

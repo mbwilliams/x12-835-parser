@@ -3,8 +3,8 @@ require 'X221/ge'
 module X221
   describe Ge do
     before do
-      @raw_data = "GE*1*1~"
-      @ge = Ge.new(@raw_data)
+      tr3_example = "GE*1*1~"
+      @ge = Ge.new(tr3_example)
     end
 
     it "has a Segment ID value GE" do

@@ -3,8 +3,8 @@ require 'X221/plb'
 module X221
   describe Plb do
     before do
-      @raw_data = 'PLB*1234567890*20000930*CV:9876514*-1.27~'
-      @plb = Plb.new(@raw_data)
+      tr3_example = 'PLB*1234567890*20000930*CV:9876514*-1.27~'
+      @plb = Plb.new(tr3_example)
     end
 
     it "has a Segment ID of value PLB" do

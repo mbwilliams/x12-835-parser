@@ -3,8 +3,8 @@ require 'X221/iea'
 module X221
   describe Iea do
     before do
-      @raw_data = "IEA*1*000000905~"
-      @iea = Iea.new(@raw_data)
+      tr3_example = "IEA*1*000000905~"
+      @iea = Iea.new(tr3_example)
     end
 
     it "has a Segment ID value IEA" do

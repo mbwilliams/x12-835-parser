@@ -3,8 +3,8 @@ require 'X221/ts3'
 module X221
   describe Ts3 do
     before do
-      @raw_data = 'TS3*123456*11*20021031*10*130957.66~'
-      @ts3 = Ts3.new(@raw_data)
+      tr3_example = 'TS3*123456*11*20021031*10*130957.66~'
+      @ts3 = Ts3.new(tr3_example)
     end
 
     it "has a Segment ID value TS3" do

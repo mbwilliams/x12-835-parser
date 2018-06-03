@@ -3,8 +3,8 @@ require 'X221/lq'
 module X221
   describe Lq do
     before do
-      @raw_data = 'LQ*HE*12345~'
-      @lq = Lq.new(@raw_data)
+      tr3_example = 'LQ*HE*12345~'
+      @lq = Lq.new(tr3_example)
     end
 
     it "has a Segment ID of value LQ" do

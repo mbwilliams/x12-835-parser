@@ -4,7 +4,7 @@ module X221
   describe Segmentable do
 
     before do
-      @raw_data = "ISA\t\t*00*..........*01*SECRET....*ZZ*SUBMITTERS.\r\nID..*ZZ* RECEIVERS.ID...*030101*1253*^*00501*000000905*1*T*:~"
+      @tr3_example = "ISA\t\t*00*..........*01*SECRET....*ZZ*SUBMITTERS.\r\nID..*ZZ* RECEIVERS.ID...*030101*1253*^*00501*000000905*1*T*:~"
     end
 
     it "has a segment terminator constant" do
@@ -25,12 +25,12 @@ module X221
     end
 
     it "cleanses the raw data" do
-      expect(Segmentable.cleanse_raw_data(@raw_data)).to eq("ISA*00*..........*01*SECRET....*ZZ*SUBMITTERS.ID..*ZZ* RECEIVERS.ID...*030101*1253*^*00501*000000905*1*T*:")
+      expect(Segmentable.cleanse_raw_data(@tr3_example)).to eq("ISA*00*..........*01*SECRET....*ZZ*SUBMITTERS.ID..*ZZ* RECEIVERS.ID...*030101*1253*^*00501*000000905*1*T*:")
     end
 
     it "builds an array of data elements from the cleansed raw data" do
       data_elements = ["ISA", "00", "..........", "01", "SECRET....", "ZZ", "SUBMITTERS.ID..", "ZZ", " RECEIVERS.ID...", "030101", "1253", "^", "00501", "000000905", "1", "T", ":"]
-      expect(Segmentable.build_data_elements(Segmentable.cleanse_raw_data(@raw_data))).to eq(data_elements)
+      expect(Segmentable.build_data_elements(Segmentable.cleanse_raw_data(@tr3_example))).to eq(data_elements)
     end
   end
 end

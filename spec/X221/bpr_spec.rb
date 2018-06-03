@@ -3,8 +3,8 @@ require 'X221/bpr'
 module X221
   describe Bpr do
     before do
-      @raw_data = 'BPR*C*150000*C*ACH*CTX*01*999999992*DA*123456*1512345678*999999999*01*999988880*DA*98765*20030901~'
-      @bpr = Bpr.new(@raw_data)
+      tr3_example = 'BPR*C*150000*C*ACH*CTX*01*999999992*DA*123456*1512345678*999999999*01*999988880*DA*98765*20030901~'
+      @bpr = Bpr.new(tr3_example)
     end
 
     it "has a Segment ID value BPR" do

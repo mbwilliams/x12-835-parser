@@ -3,8 +3,8 @@ require 'X221/ts2'
 module X221
   describe Ts2 do
     before do
-      @raw_data = 'TS2*59786*55375.77~'
-      @ts2 = Ts2.new(@raw_data)
+      tr3_example = 'TS2*59786*55375.77~'
+      @ts2 = Ts2.new(tr3_example)
     end
 
     it "has a Segment ID value TS2" do

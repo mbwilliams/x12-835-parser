@@ -3,8 +3,8 @@ require 'X221/qty'
 module X221
   describe Qty do
     before do
-      @raw_data = 'QTY*ZK*3~'
-      @qty = Qty.new(@raw_data)
+      tr3_example = 'QTY*ZK*3~'
+      @qty = Qty.new(tr3_example)
     end
 
     it "has a Segment ID of value QTY" do

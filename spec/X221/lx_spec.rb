@@ -3,8 +3,8 @@ require 'X221/lx'
 module X221
   describe Lx do
     before do
-      @raw_data = 'LX*110210~'
-      @lx = Lx.new(@raw_data)
+      tr3_example = 'LX*110210~'
+      @lx = Lx.new(tr3_example)
     end
 
     it "has a Segment ID value LX" do

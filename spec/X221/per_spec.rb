@@ -3,8 +3,8 @@ require 'X221/per'
 module X221
   describe Per do
     before do
-      @raw_data = 'PER*CX*JOHN WAYNE*TE*8005551212~'
-      @per = Per.new(@raw_data)
+      tr3_example = 'PER*CX*JOHN WAYNE*TE*8005551212~'
+      @per = Per.new(tr3_example)
     end
 
     it "has a Segment ID value PER" do

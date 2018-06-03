@@ -3,8 +3,8 @@ require 'X221/dtm'
 module X221
   describe Dtm do
     before do
-      @raw_data = 'DTM*405*20020317~'
-      @dtm = Dtm.new(@raw_data)
+      tr3_example = 'DTM*405*20020317~'
+      @dtm = Dtm.new(tr3_example)
     end
 
     it "has a Segment ID value DTM" do

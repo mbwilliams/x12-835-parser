@@ -3,8 +3,8 @@ require 'X221/n1'
 module X221
   describe N1 do
     before do
-      @raw_data = 'N1*PR*INSURANCE COMP ANY OF TIMBUCKTU*XV*8888888888~'
-      @n1 = N1.new(@raw_data)
+      tr3_example = 'N1*PR*INSURANCE COMP ANY OF TIMBUCKTU*XV*8888888888~'
+      @n1 = N1.new(tr3_example)
     end
 
     it "has a Segment ID value N1" do

@@ -3,8 +3,8 @@ require 'X221/rdm'
 module X221
   describe Rdm do
     before do
-      @raw_data = 'RDM*BM*JACK BAUER*555123456789~'
-      @rdm = Rdm.new(@raw_data)
+      tr3_example = 'RDM*BM*JACK BAUER*555123456789~'
+      @rdm = Rdm.new(tr3_example)
     end
 
     it "has a Segment ID value RDM" do

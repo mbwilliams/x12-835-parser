@@ -3,8 +3,8 @@ require 'X221/cas'
 module X221
   describe Cas do
     before do
-      @raw_data = 'CAS*PR*1*793**3*25~'
-      @cas = Cas.new(@raw_data)
+      tr3_example = 'CAS*PR*1*793**3*25~'
+      @cas = Cas.new(tr3_example)
     end
 
     it "has a Segment ID of value CAS" do

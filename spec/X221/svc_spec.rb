@@ -3,8 +3,8 @@ require 'X221/svc'
 module X221
   describe Svc do
     before do
-      @raw_data = 'SVC*HC:99214*100*80~'
-      @svc = Svc.new(@raw_data)
+      tr3_example = 'SVC*HC:99214*100*80~'
+      @svc = Svc.new(tr3_example)
     end
 
     it "has a Segment ID of value SVC" do

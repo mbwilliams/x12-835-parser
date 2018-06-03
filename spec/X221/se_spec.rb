@@ -3,8 +3,8 @@ require 'X221/se'
 module X221
   describe Se do
     before do
-      @raw_data = "SE*45*1234~"
-      @se = Se.new(@raw_data)
+      tr3_example = "SE*45*1234~"
+      @se = Se.new(tr3_example)
     end
 
     it "has a Segment ID value SE" do

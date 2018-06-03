@@ -3,8 +3,8 @@ require 'X221/ref'
 module X221
   describe Ref do
     before do
-      @raw_data = 'REF*EV*1235678~'
-      @ref = Ref.new(@raw_data)
+      tr3_example = 'REF*EV*1235678~'
+      @ref = Ref.new(tr3_example)
     end
 
     it "has a Segment ID value REF" do

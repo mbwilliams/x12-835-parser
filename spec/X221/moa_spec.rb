@@ -3,8 +3,8 @@ require 'X221/moa'
 module X221
   describe Moa do
     before do
-      @raw_data = 'MOA***MA01~'
-      @moa = Moa.new(@raw_data)
+      tr3_example = 'MOA***MA01~'
+      @moa = Moa.new(tr3_example)
     end
 
     it "has a Segment ID of value MOA" do

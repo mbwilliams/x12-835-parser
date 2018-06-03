@@ -3,8 +3,8 @@ require 'X221/mia'
 module X221
   describe Mia do
     before do
-      @raw_data = 'MIA*0***138018.4~'
-      @mia = Mia.new(@raw_data)
+      tr3_example = 'MIA*0***138018.4~'
+      @mia = Mia.new(tr3_example)
     end
 
     it "has a Segment ID of value MIA" do

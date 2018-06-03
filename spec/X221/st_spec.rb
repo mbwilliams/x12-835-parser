@@ -3,8 +3,8 @@ require 'X221/st'
 module X221
   describe St do
     before do
-      @raw_data = "ST*835*1234~"
-      @st = St.new(@raw_data)
+      tr3_example = "ST*835*1234~"
+      @st = St.new(tr3_example)
     end
 
     it "has a Segment ID value St" do

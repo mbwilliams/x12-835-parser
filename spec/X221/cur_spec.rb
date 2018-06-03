@@ -3,8 +3,8 @@ require 'X221/cur'
 module X221
   describe Cur do
     before do
-      @raw_data = 'CUR*PR*CAD~'
-      @cur = Cur.new(@raw_data)
+      tr3_example = 'CUR*PR*CAD~'
+      @cur = Cur.new(tr3_example)
     end
 
     it "has a Segment ID value CUR" do

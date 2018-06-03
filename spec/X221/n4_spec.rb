@@ -3,8 +3,8 @@ require 'X221/n4'
 module X221
   describe N4 do
     before do
-      @raw_data = 'N4*Toronto*Ontario*64108*CAD*YYY~'
-      @n4 = N4.new(@raw_data)
+      tr3_example = 'N4*Toronto*Ontario*64108*CAD*YYY~'
+      @n4 = N4.new(tr3_example)
     end
 
     it "has a Segment ID value N4" do
@@ -37,8 +37,8 @@ module X221
 
     context "with no country information" do
       before do
-        @raw_data = 'N4*KANSAS CITY*MO*64108~'
-        @n4 = N4.new(@raw_data)
+        tr3_example = 'N4*KANSAS CITY*MO*64108~'
+        @n4 = N4.new(tr3_example)
       end
 
       it "has no Country Code" do

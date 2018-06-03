@@ -3,8 +3,8 @@ require 'X221/trn'
 module X221
   describe Trn do
     before do
-      @raw_data = 'TRN*1*12345*1512345678*999999999~'
-      @trn = Trn.new(@raw_data)
+      tr3_example = 'TRN*1*12345*1512345678*999999999~'
+      @trn = Trn.new(tr3_example)
     end
 
     it "has a Segment ID value TRN" do

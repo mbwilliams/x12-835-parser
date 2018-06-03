@@ -3,8 +3,8 @@ require 'X221/clp'
 module X221
   describe Clp do
     before do
-      @raw_data = 'CLP*7722337*1*211366.97*138018.4**12*119932404007801~'
-      @clp = Clp.new(@raw_data)
+      tr3_example = 'CLP*7722337*1*211366.97*138018.4**12*119932404007801~'
+      @clp = Clp.new(tr3_example)
     end
 
     it "has a Segment ID of value CLP" do
